@@ -1,0 +1,291 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+}
+
+body {}
+
+/*Navbar////
+///////////*/
+#nav-header {
+    position: fixed;
+    width: 100%;
+    background-color: #EEEEEE;
+    border-bottom: 2px solid #0A9197;
+}
+
+#nav-header nav {
+    padding: 2% 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+#hidden-checkbox {
+    position: absolute;
+    left: -100px;
+}
+
+#brand-logo {
+    font-size: 26px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+
+#hamburger-button {
+    width: 45px;
+    height: 40px;
+    padding: 5px;
+    border: 1px solid #0A9197;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#hamburger-button span {
+    width: 30px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #0A9197;
+}
+
+#navbar {
+    display: none;
+    flex-direction: column;
+    list-style-type: none;
+    text-align: center;
+    width: 100%;
+    padding: 0%;
+    padding-top: 0.5em;
+    margin: 0%;
+    font-size: 18px;
+}
+
+.nav-link-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-link {
+    text-decoration: none;
+    padding: 0.5em;
+}
+
+.nav-link:hover {
+    color: white;
+    background-color: #0A9197;
+}
+
+#sub-dropdown-toggle {
+    position: absolute;
+    left: -100px;
+}
+
+#tour-dropdown {
+    list-style-type: none;
+    padding: 0%;
+    display: none;
+    flex-direction: column;
+}
+
+.dropdown-link-container {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0%;
+    padding: 5px;
+
+}
+
+#nav-header nav :checked~#navbar {
+    display: flex;
+}
+
+#navbar :checked~li #tour-dropdown {
+    display: flex;
+}
+
+#nav-header nav :checked~#hamburger-button .hamburger-line:nth-child(1) {
+    transform: translateY(10px) rotate(140deg);
+    height: 2px;
+}
+
+#nav-header nav :checked~#hamburger-button .hamburger-line:nth-child(2) {
+    visibility: hidden;
+}
+
+#nav-header nav :checked~#hamburger-button .hamburger-line:nth-child(3) {
+    transform: translateY(-10px) rotate(-140deg);
+    height: 2px;
+}
+
+/*----------------------------------------*/
+
+/*hero section
+///////////////*/
+#hero-mother {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("image/heroBackground.jpg");
+}
+
+#hero-container {
+    border: 1px solid blue;
+    height: 100vh;
+    padding: 2% 5%;
+    background-color: hsl(0, 0%, 0%, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-text {
+    color: white;
+    font-size: 48px;
+    max-width: 100%;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+.different-color {
+    color: #00ADB5;
+}
+
+#hero-button {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0.4em 1em;
+    font-weight: 500;
+    border: 2px solid #00ADB5;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 0%, 0);
+}
+
+#hero-button:hover {
+    background-color: #00ADB5;
+}
+
+/*--------------------------------*/
+
+/*-----INfo section------*/
+#info-mother {
+    background-color: #EEEEEE;
+    height: 90vh;
+    padding: 0.3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#info-title {
+    color: #017e85;
+    padding: 0.3em;
+}
+
+#info-img {
+    height: 40vh;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+#info-text {
+    text-align: center;
+    max-width: 80%;
+    font-size: 16px;
+}
+
+/*//////////////////*/
+
+/*-----Tour Card Section--------------*/
+#tour-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+    padding-top: 0%;
+}
+
+#main-card-header {
+    padding: 1em;
+    color: #017e85;
+}
+
+#card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.tour-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tour-card img {
+    height: auto;
+    max-width: 100%;
+    padding: 0.4em;
+}
+
+.tour-card h3 {
+    color: #017e85;
+    padding: 0.4em;
+    margin: 0%;
+    font-size: 20px;
+}
+
+.tour-card ul {
+    text-align: center;
+    list-style-type: none;
+    margin: 0%;
+    padding: 0.7em;
+}
+
+.bolded-text {
+    font-weight: bold;
+}
+
+.card-link {
+    padding: 0.3em;
+    padding-bottom: 0.9em;
+    display: block;
+    color: #017e85;
+    text-decoration: none;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
+
+#card-button-container {
+    text-align: center;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0.5em;
+}
+
+.card-button {
+    display: block;
+    border: 1.8px solid #017e85;
+    padding: 0.5em 0.6em;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card-button:hover {
+    color: white;
+    background-color: #017e85;
+}
