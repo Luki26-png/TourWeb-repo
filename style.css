@@ -74,6 +74,7 @@ body {}
 .nav-link {
     text-decoration: none;
     padding: 0.5em;
+    color: black;
 }
 
 .nav-link:hover {
