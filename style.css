@@ -176,7 +176,7 @@ body {}
 /*-----INfo section------*/
 #info-mother {
     background-color: #EEEEEE;
-    height: 90vh;
+    min-height: 90vh;
     padding: 0.3em;
     display: flex;
     flex-direction: column;
